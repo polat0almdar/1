@@ -1,0 +1,9 @@
+#test {
+    color: blue;
+}
+
+button {
+    background-color: pink;
+    border-style: outset;
+    border-width: 20px;
+}

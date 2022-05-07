@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="testing(),console.log(multiply(5,2), person);" id="test">
+      this is my page
+    </button>
+    <button onclick="document.getElementById('date').innerHTML=Date()">
+      what da hek the time is now?
+    </button>
+    <p id="date"></p>
+    <script>
+        x = 10;
+        y = 20;
+        let a = 1;
+        const b = 2;
+        var c = a + b;
+
+        carname = "mercedes";
+
+        cars = ["BMW", "AUDI", "Mercedes"];
+        cars.push("skoda");
+        Mcar = {
+            type: "Mercedes",
+            model: "E320",
+            color: "black",
+        };
+
+        function testing() {
+            document.getElementById("test").innerHTML = "page title changed";
+            document.getElementById("test").style.color = "red";
+            document.getElementById("test").style.fontSize = "100px";
+            alert("what is 9+10");
+            console.log("hello world \n" + x + y);
+            // window.print(x + y);
+        }
+        document.write(x + y);
+
+        function multiply(x1, y1) {
+            console.log(x1, y1);
+            return x1 * y1;
+        }
+
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function() {
+                return console.log(this.firstName + " " + this.lastName);
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="mystyle.css" />
+</body>
+
+</html>
